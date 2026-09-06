@@ -389,13 +389,13 @@ body {
 
 .btn.btn-danger,
 .btn-danger {
-    background: #9f3d35;
+    background: #8b5e3c;
     color: #fff;
 }
 
 .btn.btn-danger:hover,
 .btn-danger:hover {
-    background: #7f2f29;
+    background: #6b452e;
     color: #fff;
 }
 

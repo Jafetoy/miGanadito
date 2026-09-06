@@ -10,12 +10,19 @@
     border-radius:12px;
     margin-bottom:25px;
     box-shadow:0 4px 10px rgba(0,0,0,.1);
+    min-width:0;
 }
 
 /* ===== TABLA ===== */
 .pesajes-module table{
     width:100%;
     border-collapse:collapse;
+}
+.pesajes-module .data-table-wrap {
+    width:100%;
+    max-width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
 }
 .pesajes-module th{
     background:#d8c2a8;
@@ -49,7 +56,10 @@
     background:#5f77aa;
 }
 .pesajes-module .btn-del{
-    background:#a14a3a;
+    background:#8b5e3c;
+}
+.pesajes-module .btn-danger {
+    background:#8b5e3c;
 }
 
 /* ===== FORM ===== */
@@ -68,6 +78,9 @@
 
 @media (max-width: 768px) {
     .pesajes-module .box { padding: 15px; }
+    .pesajes-module .data-card-header h3 {
+        font-size: 1.25rem;
+    }
     .pesajes-module table { font-size: 0.85rem; }
     .pesajes-module th, .pesajes-module td { padding: 6px; }
 }
@@ -121,6 +134,63 @@
     }
 
 @media (max-width: 576px) {
+    .pesajes-module h2 {
+        font-size: 1.8rem;
+        line-height: 1.1;
+        overflow-wrap:anywhere;
+    }
+
+    .pesajes-module > .btn {
+        width:100%;
+        min-height:44px;
+        margin-bottom:1rem;
+    }
+
+    .pesajes-module .box {
+        padding:10px;
+        margin-left:0;
+        margin-right:0;
+        border-radius:12px;
+    }
+
+    .pesajes-module .data-card-header,
+    .pesajes-module .data-card-body {
+        padding:0.85rem;
+    }
+
+    .pesajes-module .data-toolbar label {
+        display:block;
+        margin-bottom:0.4rem;
+    }
+
+    .pesajes-module .data-table-wrap {
+        margin:0 -0.85rem;
+        width:calc(100% + 1.7rem);
+        border-top:1px solid #c4ab92;
+    }
+
+    .pesajes-module table {
+        min-width:600px;
+    }
+
+    .pesajes-module .actions-row {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:0.35rem;
+        max-width:150px;
+        margin:0 auto;
+    }
+
+    .pesajes-module .actions-row .btn,
+    .pesajes-module .actions-row form {
+        width:100%;
+    }
+
+    .pesajes-module .actions-row .btn {
+        min-height:40px;
+    }
+
     .pesajes-module .overlay {
         align-items:flex-start;
         padding:12px;
